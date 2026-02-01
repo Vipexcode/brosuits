@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyHub Dashboard Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-slate-100 text-slate-900">
+    <div class="flex">
+      <aside class="hidden lg:flex lg:flex-col lg:w-64 bg-white border-r border-slate-200 min-h-screen">
+        <div class="px-6 py-6 border-b border-slate-100">
+          <div class="flex items-center space-x-2 text-slate-900 font-semibold text-xl">
+            <div class="w-9 h-9 bg-indigo-600 rounded-xl flex items-center justify-center text-white">📘</div>
+            <span>StudyHub</span>
+          </div>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-2 text-sm">
+          <button class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl font-medium bg-indigo-50 text-indigo-700">
+            <span>🏠</span>
+            <span>Dashboard</span>
+          </button>
+          <button class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl font-medium text-slate-600 hover:bg-slate-100">
+            <span>📝</span>
+            <span>Blog</span>
+          </button>
+          <button class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl font-medium text-slate-600 hover:bg-slate-100">
+            <span>📚</span>
+            <span>Resources</span>
+          </button>
+          <button class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl font-medium text-slate-600 hover:bg-slate-100">
+            <span>🧪</span>
+            <span>Mock Tests</span>
+          </button>
+          <button class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl font-medium text-slate-600 hover:bg-slate-100">
+            <span>📈</span>
+            <span>Progress Tracker</span>
+          </button>
+          <button class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl font-medium text-slate-600 hover:bg-slate-100">
+            <span>🔖</span>
+            <span>Bookmarks</span>
+          </button>
+          <button class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl font-medium text-slate-600 hover:bg-slate-100">
+            <span>⚙️</span>
+            <span>Settings</span>
+          </button>
+        </nav>
+        <div class="px-6 pb-6">
+          <div class="rounded-2xl bg-slate-900 text-white p-4">
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium">Next mock test</span>
+              <span>📅</span>
+            </div>
+            <p class="text-lg font-semibold mt-3">Friday, 9:00 AM</p>
+            <button class="mt-4 w-full bg-white text-slate-900 py-2 rounded-lg text-sm font-semibold">
+              Schedule reminder
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="flex-1">
+        <header class="px-6 lg:px-10 pt-8 pb-6">
+          <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl text-white px-6 py-8 lg:px-10 lg:py-10 shadow-lg">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+              <div>
+                <p class="text-indigo-100 text-sm uppercase tracking-widest">Dashboard</p>
+                <h1 class="text-3xl lg:text-4xl font-bold mt-2">Good morning, Aanya</h1>
+                <p class="text-indigo-100 mt-3 max-w-xl">You are 78% toward your weekly goal. Keep going!</p>
+              </div>
+              <button class="inline-flex items-center justify-center bg-white text-indigo-700 px-6 py-3 rounded-xl font-semibold shadow-sm">
+                ✨ Review today’s plan
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <section class="px-6 lg:px-10 pb-10 space-y-8">
+          <div class="grid grid-cols-1 xl:grid-cols-[1.2fr_1fr] gap-6">
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h2 class="text-xl font-semibold">Today’s Plan</h2>
+                  <p class="text-sm text-slate-500 mt-1">Wednesday, 10:30 AM</p>
+                </div>
+                <span class="text-xs font-semibold bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full">Priority focus</span>
+              </div>
+              <div class="mt-6 space-y-4">
+                <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                  <div>
+                    <p class="font-semibold text-slate-800">Vocabulary sprint</p>
+                    <p class="text-sm text-slate-500">25 new words • 15 min</p>
+                  </div>
+                  <button class="text-indigo-600 text-sm font-semibold">Start →</button>
+                </div>
+                <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                  <div>
+                    <p class="font-semibold text-slate-800">Reading practice</p>
+                    <p class="text-sm text-slate-500">1 editorial • 20 min</p>
+                  </div>
+                  <button class="text-indigo-600 text-sm font-semibold">Start →</button>
+                </div>
+                <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                  <div>
+                    <p class="font-semibold text-slate-800">Mock quiz</p>
+                    <p class="text-sm text-slate-500">10 questions • 12 min</p>
+                  </div>
+                  <button class="text-indigo-600 text-sm font-semibold">Start →</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
+              <div class="flex items-center justify-between">
+                <h2 class="text-xl font-semibold">Quick Stats</h2>
+                <span class="text-xs text-slate-500">Last 7 days</span>
+              </div>
+              <div class="mt-6 grid grid-cols-1 gap-4">
+                <div class="flex items-center justify-between p-4 rounded-2xl border border-slate-100 bg-slate-50">
+                  <div>
+                    <p class="text-sm text-slate-500">Accuracy</p>
+                    <p class="text-lg font-semibold text-slate-900">86%</p>
+                  </div>
+                  <span class="text-sm font-semibold text-emerald-600">+4%</span>
+                </div>
+                <div class="flex items-center justify-between p-4 rounded-2xl border border-slate-100 bg-slate-50">
+                  <div>
+                    <p class="text-sm text-slate-500">Study streak</p>
+                    <p class="text-lg font-semibold text-slate-900">12 days</p>
+                  </div>
+                  <span class="text-sm font-semibold text-emerald-600">+2</span>
+                </div>
+                <div class="flex items-center justify-between p-4 rounded-2xl border border-slate-100 bg-slate-50">
+                  <div>
+                    <p class="text-sm text-slate-500">Time spent</p>
+                    <p class="text-lg font-semibold text-slate-900">6h 40m</p>
+                  </div>
+                  <span class="text-sm font-semibold text-emerald-600">+45m</span>
+                </div>
+                <div class="flex items-center justify-between p-4 rounded-2xl border border-slate-100 bg-slate-50">
+                  <div>
+                    <p class="text-sm text-slate-500">Vocabulary goal</p>
+                    <p class="text-lg font-semibold text-slate-900">180 / 250</p>
+                  </div>
+                  <span class="text-sm font-semibold text-emerald-600">+24</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+              <div>
+                <h2 class="text-xl font-semibold">Continue Studying</h2>
+                <p class="text-sm text-slate-500 mt-1">Last session: Grammar fundamentals</p>
+                <div class="mt-4 w-full max-w-md bg-slate-100 rounded-full h-2">
+                  <div class="bg-indigo-600 h-2 rounded-full w-[65%]"></div>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">65% complete</p>
+              </div>
+              <button class="inline-flex items-center justify-center bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold shadow-sm">
+                ▶ Resume lesson
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center">📰</div>
+              <h3 class="text-lg font-semibold mt-4">Study Blog</h3>
+              <p class="text-sm text-slate-500 mt-2">Daily strategies for smarter revision and exam confidence.</p>
+              <button class="mt-5 text-indigo-600 text-sm font-semibold">Read latest posts →</button>
+            </div>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center">📂</div>
+              <h3 class="text-lg font-semibold mt-4">Resources</h3>
+              <p class="text-sm text-slate-500 mt-2">Downloadable worksheets, flashcards, and topic checklists.</p>
+              <button class="mt-5 text-indigo-600 text-sm font-semibold">Browse library →</button>
+            </div>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center">🧪</div>
+              <h3 class="text-lg font-semibold mt-4">Mock Tests</h3>
+              <p class="text-sm text-slate-500 mt-2">Full-length tests with detailed performance analytics.</p>
+              <button class="mt-5 text-indigo-600 text-sm font-semibold">Start a mock test →</button>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Dashboard Snapshot</h3>
+              <span class="text-xs text-slate-500">Reference image</span>
+            </div>
+            <div class="rounded-2xl overflow-hidden border border-slate-100 bg-slate-50">
+              <img
+                src="../assets/dashboard.svg"
+                alt="StudyHub dashboard preview"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
